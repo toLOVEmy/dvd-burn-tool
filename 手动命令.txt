@@ -1,0 +1,14 @@
+允许执行脚本
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+列出光盘
+powershell -File .\append_to_disc_portable.ps1 -ShowDrives
+
+追加单个文件
+powershell -File .\append_to_disc_portable.ps1 -SourceDir "G:\codex_project\模拟中标麒麟\download_all.ps1" -RecorderIdx 0
+
+
+追加整个文件夹
+powershell -File .\append_to_disc_portable.ps1 -Path "G:\codex_project\模拟中标麒麟" -RecorderIdx 0
+
